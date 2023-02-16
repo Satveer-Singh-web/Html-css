@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x:hidden;
+}
+@media screen and (min-width: 320px) and (max-width:480px){
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+}
+.container {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number {
+    display: flex;
+}
+
+.number p {
+    padding: 0px 10px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 0px 20px;
+    font-size: 15px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav ion-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.inner {
+    margin-top: 30px;
+    position: absolute;
+    visibility: hidden;
+    display: block;
+    box-shadow: 1px 1px 2px;
+    transition: transform 2s;
+    z-index: 8;
+    background-color: white;
+}
+
+.dropdown:hover .inner {
+    visibility: visible;
+    transform: translateY(-30px);
+}
+
+.drop1 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.drop1 img {
+    padding: 0px 10px;
+    height: 80px;
+    width: 70px;
+}
+
+.text {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.drop1 p {
+    line-height: 5px;
+}
+
+.drop1 .icon {
+    margin-left: 50px;
+    margin-top: 10px;
+
+}
+
+.underline {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 1px solid gray;
+    background-color: gray;
+}
+
+.total {
+    display: flex;
+    justify-content: space-around;
+}
+
+.total h1 {
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button button {
+    padding: 9px 30px;
+}
+
+.btn1 {
+    background-color: black;
+    color: white;
+}
+
+.btn2 {
+    background-color: white;
+    color: black;
+}
+
+.btn2:hover {
+    background-color: black;
+    color: white;
+}
+
+.inner2 {
+    margin-top: 30px;
+    position: absolute;
+    visibility: hidden;
+    box-shadow: 1px 1px 2px;
+    transition: transform 2s;
+}
+
+.dropdown2:hover .inner2 {
+    visibility: visible;
+    transform: translateY(-30px);
+}
+
+.inner2 .input {
+    height: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* middle underline */
+.underline1 {
+    width: 79%;
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navigation bar */
+.navbar {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li ion-icon {
+    vertical-align: middle;
+}
+
+.shop {
+    margin-top: 30px;
+    position: absolute;
+    display: flex;
+    /* border: solid 1px; */
+    visibility: hidden;
+    transition: transform 0.5s;
+    left: 30%;
+    z-index: 6;
+    background-color: white;
+}
+
+.pages_inside {
+    display: block;
+
+}
+
+.pages_inside li {
+    list-style-type: none;
+}
+
+.pages_inside .first {
+    display: block;
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap;
+}
+
+.divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.pages_inside .li a {
+
+    text-decoration: none;
+    color: black;
+    color: #222;
+    font-size: 15px;
+    border: 1px solid transparent;
+    display: block;
+    margin-top: 10px;
+    padding: 8px 0px;
+    padding-right: 30px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: .3s all;
+    text-align: left;
+}
+
+.li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown3:hover .shop {
+    visibility: visible;
+    transform: translateY(-30px);
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .navbar {
+        flex-direction: column;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+
+    .navbar li {
+        padding: 10px 0px;
+    }
+
+    .shop {
+        width: 300px;
+        background-color: white;
+        z-index: 5;
+        position: absolute;
+        left:0%;
+    }
+}
+
+.pages1 {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    transition: transform 0.5s;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.dropdown4:hover .pages1 {
+    visibility: visible;
+    transform: translateY(-30px);
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .pages1 {
+        background-color: white;
+        z-index: 9;
+    }
+}
+
+.blog {
+    margin-top: 30px;
+    visibility: hidden;
+    transition: transform 0.5s;
+    display: block;
+    position: absolute;
+    left: 50%;
+    background-color: white;
+}
+
+.dropdown5:hover .blog {
+    visibility: visible;
+    transform: translateY(-30px);
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .blog {
+        background-color: white;
+        z-index: 10;
+    }
+}
+/* next section */
+.main2{
+    width: 100%;
+    margin-top: 50px;
+    background-color:#f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main2 h1{
+    font-weight: 200;
+margin: 0 0 6px 120px;
+font-family: "Poppins", sans-serif;
+font-size: 36px;
+line-height: 1.1;
+color: #777;
+}
+.main2 a{
+    color: #000;
+    text-decoration: none;
+    margin: 0 0 6px 120px;
+outline: 0;
+font-weight: 200;
+font-size: 14px;
+line-height: 1.5;
+font-family: "Poppins", sans-serif;
+} 
+.main2 .shp{
+    color:#777 ;
+}
+@media screen and (min-width: 320px) and (max-width:480px){
+    .main2{
+        margin-top: 50px;
+    }
+}
+/* next section */
+.block{
+    margin-left: 25%;
+    margin-top: 70px;
+    width: 50%;
+}
+.table th{
+    border-top: 0;
+    padding: 8px;
+line-height: 1.4;
+text-align: left;
+border-bottom: 2px solid #ddd;
+font-size: 18px;
+color: #333;
+font-family: "Poppins", sans-serif;
+padding: 0px 60px;
+}
+.product-info{
+    display: flex;
+    align-items: center;
+}
+.table th:first-child{
+    padding-right: 150px;
+}
+.product-info a{ 
+    margin-left: 10px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.4;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.content td{
+    vertical-align: middle;
+    /* border-top: 1px solid #ddd; */
+    line-height: 1.4;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+    margin-left: 30px;
+    text-align: center;
+}
+.money{
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.remove{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #c7254e;
+}
+.block .btn3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: #000;
+color: #fff;
+display: inline-block;
+font-size: 11px;
+letter-spacing: 1px;
+padding: 14px 35px;
+text-transform: uppercase;
+font-weight: 200;
+float: right;
+border: 1px solid transparent;
+}
+@media screen and (min-width: 320px) and (max-width:480px){
+    .block{
+        margin-left: 0%;
+    }
+    .table th:first-child{
+        padding-left: 0px;
+    }
+    .table th{
+        padding: 0px;
+        padding: 0px 0px;
+    }
+    .product-info a{
+        margin-left: 0px;
+        padding-left:0px;
+    }
+    .content td{
+        padding: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+/* next section */
+.main6{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color:#f5f5f5;
+    padding-top:40px;
+    padding-bottom: 30px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social li{
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.social a{
+    text-decoration: none;
+}
+.social ion-icon{
+    font-size: 20px;
+color: #555;
+line-height: 1;
+
+}
+.text2{
+    display: flex;
+    justify-content: center;
+}
+.text2 li{
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.text2 li a{
+    text-decoration: none;
+    color: #333;
+font-size: 16px;
+text-transform: uppercase;
+line-height: 1.5;
+font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 320px) and (max-width:480px){
+    .text2{
+        display: block;
+    }
+    .text2 li{
+       padding: 10px 0px;
+    }
+}
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #757575;
+    font-size: 15px;
+    line-height: 1.5;
+}
+ .fish{ 
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+color: #757575;
+font-size: 15px;
+line-height: 1.5;
+font-weight: bold;
+}
+/* done */
+
